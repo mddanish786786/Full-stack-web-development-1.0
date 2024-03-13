@@ -1,0 +1,165 @@
+Q. What are inline and block elements in HTML and the difference between them? name a few inline elements and block elements.
+
+Ans. 
+In HTML, elements are categorized into two main types: inline elements and block elements.
+
+Inline elements:
+
+Inline elements do not start on a new line and only take up as much width as necessary.
+They typically appear within a line of text.
+Examples of inline elements include <span>, <a>, <strong>, <em>, <img>, <input>, <button>, <abbr>, <code>, and <i>.
+Block elements:
+
+Block elements start on a new line and occupy the full width available.
+They create a block-level box in the document flow, pushing subsequent elements onto a new line.
+Examples of block elements include <div>, <p>, <h1> to <h6>, <ul>, <ol>, <li>, <table>, <form>, <header>, <footer>, <section>, 
+and <article>.
+Difference:
+
+Inline elements:
+Do not start on a new line.
+Only take up as much width as necessary.
+Cannot have width and height set.
+Allow other inline elements to appear next to them.
+Examples: <span>, <a>, <strong>, <em>.
+Block elements:
+Start on a new line.
+Occupy the full width available.
+Can have width and height set.
+Cause a line break before and after themselves.
+Examples: <div>, <p>, <h1> to <h6>, <ul>, <li>.
+
+Q. How to work with images in HTML and explain in detail <img/> tag important attributes.
+
+Ans. Working with images in HTML involves using the <img> tag, which is a self-closing tag used to embed images into web pages. 
+The <img> tag does not have a closing tag because it inserts content directly into the document.
+
+Here's the basic syntax of the <img> tag:
+
+<img src="image.jpg" alt="Description of the image" width="300" height="200">
+Let's break down the important attributes of the <img> tag:
+
+src: This attribute specifies the URL of the image to be displayed. It is required and is the only mandatory attribute for 
+the <img> tag. The image file can be located on the same server as the web page or on a different server.
+
+alt: The alt attribute provides alternative text for the image, which is displayed if the image cannot be loaded or if the 
+user is using a screen reader. It is important for accessibility and search engine optimization (SEO). The alt text should 
+describe the content or function of the image concisely and accurately.
+
+width: This attribute specifies the width of the image in pixels. It is an optional attribute that allows you to control the 
+width of the image when it is displayed on the web page. If the width attribute is not specified, the image will be displayed 
+at its original size.
+
+height: This attribute specifies the height of the image in pixels. Similar to the width attribute, it is optional and allows 
+you to control the height of the image when displayed. If the height attribute is not specified, the image will be displayed 
+at its original size.
+
+loading: This attribute specifies the loading behavior of the image. It can have one of the following values:
+
+auto: The browser decides when to load the image (default behavior).
+eager: The browser should load the image as soon as possible, even if it's off-screen.
+lazy: The browser should only load the image when it is near the viewport (i.e., when it's about to be displayed). This is 
+useful for improving page load performance by deferring the loading of images that are not immediately visible to the user.
+title: The title attribute provides additional information about the image, usually displayed as a tooltip when the user 
+hovers over the image with the mouse cursor. It is optional and can be used to provide supplementary details or context 
+about the image.
+
+srcset: The srcset attribute allows you to specify multiple sources for the image and their respective sizes, resolutions, 
+or pixel densities. This is useful for responsive web design, where different image files can be served based on the device's 
+screen size or resolution.
+
+decoding: This attribute specifies how the browser should decode the image. It can have one of the following values:
+
+async: Decode the image asynchronously (default behavior).
+sync: Decode the image synchronously, blocking page rendering until the image is fully decoded.
+auto: Let the browser decide the best decoding method based on performance considerations.
+
+Q. How to create lists  in HTML?
+
+
+Ans. 
+In HTML, there are two main types of lists that you can create: ordered lists and unordered lists. Here's how you can create 
+each type:
+
+Ordered Lists (<ol>): Ordered lists are lists where each item is sequentially numbered. You can create an ordered list using 
+the <ol> tag and include list items (<li>) within it. Here's an example:
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+This will create a numbered list like:
+
+1. First item
+2. Second item
+3. Third item
+4. Unordered Lists (<ul>): Unordered lists are lists where each item is bulleted or marked with a bullet point. You can create an unordered list using the <ul> tag and include list items (<li>) within it. Here's an example:
+
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ul>
+This will create a bulleted list like:
+
+. First item
+. Second item
+. Third item
+1. Nested Lists: You can also nest lists within each other to create hierarchical lists. For example, you can have an ordered list within an unordered list, or vice versa. Here's an example of a nested list:
+
+<ul>
+  <li>Main item 1
+    <ol>
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ol>
+  </li>
+  <li>Main item 2
+    <ul>
+      <li>Subitem A</li>
+      <li>Subitem B</li>
+    </ul>
+  </li>
+</ul>
+This will create a nested list structure like:
+
+. Main item 1
+  1.1 Subitem 1
+  1.2 Subitem 2
+. Main item 2
+  . Subitem A
+  . Subitem B
+
+  Q. How to interlink web pages and navigate people to other website?
+
+
+  Ans. To interlink web pages within your website and navigate people to other websites, you can use HTML anchor (<a>) tags. 
+  Here's how you can use them:
+
+Interlinking Web Pages: To link to another page within your own website, you need to specify the URL of the destination page 
+in the href attribute of the <a> tag. Here's an example:
+
+<a href="page2.html">Link to Page 2</a>
+In this example, clicking on the link will take the user to page2.html within the same website.
+
+Navigating to Other Websites: To navigate people to other websites, you also specify the URL of the external website in the 
+href attribute of the <a> tag. Here's an example:
+
+<a href="https://www.example.com">Visit Example Website</a>
+In this example, clicking on the link will take the user to the https://www.example.com website.
+
+Opening Links in New Windows: You can make links open in a new browser window or tab by adding the target="_blank" attribute 
+to the <a> tag. This ensures that your website remains open in the background. Here's an example:
+
+<a href="https://www.example.com" target="_blank">Visit Example Website (opens in new window)</a>
+Linking to Specific Sections: You can also link to specific sections within a web page using anchor links. To do this, you 
+need to specify the ID of the target section in the href attribute. Here's an example:
+
+<a href="#section2">Link to Section 2</a>
+
+<!-- Somewhere else on the same page -->
+<section id="section2">
+  <!-- Section content goes here -->
+</section>
+In this example, clicking on the link will scroll the page to the section with the ID section2.
