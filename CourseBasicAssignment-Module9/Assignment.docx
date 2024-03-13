@@ -1,0 +1,100 @@
+Q. What is HTML?
+
+Ans. HTML stands for Hypertext Markup Language. It is the standard markup language used to create and structure web pages 
+and web applications. HTML provides a set of elements or tags that define the structure and content of a web page, 
+including headings, paragraphs, images, links, forms, and more.
+
+HTML documents consist of a hierarchy of elements organized within a tree-like structure. Each element is enclosed within 
+opening and closing tags, which define its type and properties. For example, <p> is the opening tag for a paragraph element, 
+and </p> is the closing tag. Elements can also have attributes that provide additional information or modify their behavior, 
+such as the src attribute in an image tag to specify the image source.
+
+Web browsers interpret HTML documents and render them into visually formatted web pages that users can view and interact with. 
+HTML works in conjunction with other web technologies such as CSS (Cascading Style Sheets) for styling and layout, and JavaScript 
+for interactivity and dynamic behavior, to create rich and interactive web experiences.
+
+In summary, HTML is the foundational language of the World Wide Web, used to create the structure and content of web pages and 
+applications, enabling users to access and interact with information and services on the internet.
+
+Q. What is CSS?
+
+Ans. CSS stands for Cascading Style Sheets. It is a style sheet language used to describe the presentation and formatting of 
+HTML documents, including web pages and web applications. CSS allows developers to define the visual appearance of elements 
+on a web page, such as colors, fonts, spacing, layout, and more.
+
+CSS works by selecting HTML elements and applying styles to them using rulesets. A CSS ruleset consists of a selector, which 
+identifies the HTML elements to be styled, and one or more declarations, which specify the styles to be applied. For example:
+
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+In this example, the CSS ruleset targets all <h1> elements and applies a blue color and a font size of 24 pixels.
+
+CSS provides a wide range of styling capabilities, including:
+
+Color and Typography: CSS allows you to specify colors, fonts, font sizes, font weights, and text alignments, enabling you 
+to customize the appearance of text and typography on a web page.
+
+Layout and Positioning: CSS provides layout properties such as width, height, margins, padding, and positioning 
+(e.g., absolute, relative, fixed) to control the placement and arrangement of elements on the page.
+
+Responsive Design: CSS supports responsive design techniques, allowing developers to create layouts that adapt and respond to 
+different screen sizes and devices, such as desktops, tablets, and smartphones.
+
+Animations and Transitions: CSS includes properties for creating animations and transitions, enabling you to add visual effects 
+and interactivity to elements on the page, such as fades, slides, and rotations.
+
+Flexbox and Grid Layout: CSS introduces layout models such as Flexbox and CSS Grid, which provide powerful and flexible 
+techniques for creating complex and responsive page layouts.
+
+Q. Why did JavaScript come into the picture?
+
+Ans. JavaScript emerged as a crucial component in web development for several reasons:
+
+Client-Side Interactivity: Initially, web pages were static and lacked interactivity. JavaScript allowed developers to add 
+dynamic behavior to web pages, enabling client-side interactivity such as form validation, interactive maps, animations, 
+and more.
+
+Enhanced User Experience: JavaScript enables developers to create more engaging and interactive user experiences. With JavaScript, 
+developers can create dynamic interfaces that respond to user actions in real-time, providing a more fluid and responsive 
+experience for users.
+
+Asynchronous Programming: JavaScript supports asynchronous programming, allowing tasks to be executed independently of one 
+another. This capability is essential for handling events, fetching data from servers, and performing operations without 
+blocking the main execution thread, improving performance and responsiveness.
+
+Cross-Browser Compatibility: JavaScript works across different web browsers, making it a versatile and widely supported language 
+for web development. This cross-browser compatibility allows developers to create consistent experiences for users across various 
+platforms and devices.
+
+Server-Side Development: With the advent of Node.js, JavaScript has also become popular for server-side development. Node.js 
+enables developers to build scalable and efficient server-side applications using JavaScript, leveraging its asynchronous and 
+event-driven nature.
+
+Rich Ecosystem: JavaScript has a vast ecosystem of libraries, frameworks, and tools that streamline development and enable 
+developers to build complex web applications more efficiently. Popular frameworks like React, Angular, and Vue.js provide 
+powerful abstractions for building user interfaces, while libraries like jQuery simplify DOM manipulation and AJAX requests.
+
+Q. History of JavaScript and EcmaScript? Explain in your own words.
+
+Ans. JavaScript, originally named LiveScript, was created by Brendan Eich while he was working at Netscape Communications 
+Corporation in 1995. It was initially developed as a scripting language for web browsers to add interactivity and dynamic 
+behavior to web pages. In December 1995, JavaScript was released with Netscape Navigator 2.0, marking the beginning of its 
+journey as a crucial component of web development.
+
+As JavaScript gained popularity, standardization became necessary to ensure interoperability and consistency across different 
+web browsers. In 1997, Netscape submitted JavaScript to the European Computer Manufacturers Association (ECMA) for standardization. 
+The standardization effort led to the creation of the first edition of the ECMAScript specification, officially named 
+ECMAScript 1, published in June 1997.
+
+Over the years, ECMAScript evolved with subsequent editions introducing new features, improvements, and clarifications to the 
+language. Notable editions include ECMAScript 3 (1999), which standardized many features found in modern JavaScript 
+implementations, ECMAScript 5 (2009), which introduced significant enhancements such as strict mode, JSON support, 
+and new array methods, and ECMAScript 6 (2015), also known as ES6 or ES2015, which introduced major language enhancements 
+including arrow functions, classes, modules, and promises.
+
+Since ECMAScript 6, the ECMAScript specification has been updated annually, with new editions introducing additional features 
+and improvements. This rapid release cycle aims to ensure that JavaScript continues to evolve and meet the changing needs of 
+web developers and the web ecosystem.
