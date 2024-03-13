@@ -1,0 +1,72 @@
+Q. What is the internet ? Explain in your own words.
+
+Ans. The internet is a vast network of interconnected computers and 
+devices around the world. It allows these devices to communicate and 
+share information with each other through a system of protocols and technologies. 
+Essentially, it's like a gigantic web of digital highways that enables people to 
+access websites, send emails, share files, stream videos, and much more. The internet 
+has revolutionized the way we communicate, work, learn, and entertain ourselves, 
+making information and resources more accessible to billions of people worldwide.
+
+Q. What is a web browser? expalin in your own word.
+
+Ans. A web browser is a software application that allows users to access and navigate 
+the internet. It acts as a gateway to the vast array of information and resources available 
+online. With a web browser, users can enter website addresses (URLs) or search terms to 
+find and view web pages, images, videos, and other content.
+
+Web browsers interpret and display web content, such as text, images, and multimedia, using 
+various rendering engines. They also support features like bookmarks, tabs, history, and 
+extensions, enhancing the browsing experience and providing users with tools to manage their online activities.
+
+In simpler terms, a web browser is like a window to the internet, enabling users to explore 
+and interact with websites and online services effortlessly.
+
+Q. What is a browser engine? expalin in your own word.
+
+Ans. A browser engine, also known as a layout engine, is a core component of a web browser responsible 
+for rendering web pages. It interprets the code of a web page, typically written in languages like HTML, 
+CSS, and JavaScript, and displays the content to the user in a visually appealing and interactive format.
+
+Browser engines work behind the scenes to process the code of a web page and translate it into what users 
+see on their screens. They handle tasks such as parsing HTML to determine the structure of the page, 
+applying CSS styles to define its appearance, and executing JavaScript to add interactivity and dynamic behavior.
+
+Different web browsers use different browser engines, each with its own strengths and weaknesses. Some popular 
+browser engines include Blink (used by Google Chrome and other Chromium-based browsers), 
+Gecko (used by Mozilla Firefox), and WebKit (used by Apple Safari).
+
+In essence, a browser engine is like the brain of a web browser, responsible for interpreting and rendering 
+web content to provide users with a seamless browsing experience.
+
+Q. What is a static site? expalin in your own word.
+
+Ans. A static site refers to a type of website that consists of web pages with fixed content that does not 
+change unless manually updated by a developer. These websites are typically built using only HTML, CSS, and 
+sometimes JavaScript, without relying on server-side processing or databases to generate content dynamically.
+
+In a static site, each web page is pre-designed and stored as static files on a web server. When a user requests 
+a page, the server simply serves the pre-built file, without any further processing or customization based on 
+user input or other dynamic factors.
+
+Static sites are often used for simple websites with relatively static content, such as blogs, portfolios, 
+landing pages, or documentation sites. They tend to be faster, more secure, and easier to manage than dynamic 
+websites because they don't require server-side processing or database interactions. However, they may be less 
+flexible for websites that require frequent content updates or user interactions.
+
+Q. What is a dynamic site? Explain in your own words.
+
+Ans. A dynamic site refers to a type of website that generates web pages dynamically, meaning the content of the 
+pages can change based on various factors such as user input, database queries, or other external data sources. 
+Unlike static sites, where content is fixed and stored as static files, dynamic sites use server-side processing 
+to generate customized content for each user request.
+
+Dynamic sites typically involve server-side scripting languages like PHP, Python, Ruby, or ASP.NET, which allow 
+developers to create web pages on-the-fly by executing code on the web server. These scripts interact with databases, 
+APIs, or other external resources to retrieve and manipulate data, which is then used to generate HTML content 
+dynamically before being sent to the user's web browser.
+
+Examples of dynamic sites include e-commerce platforms, social media networks, content management systems (CMS), online 
+forums, and web applications. Dynamic sites offer greater flexibility and interactivity compared to static sites, 
+allowing for personalized user experiences, real-time updates, and complex functionality. However, they can be more 
+complex to develop and maintain due to their reliance on server-side processing and data management.
