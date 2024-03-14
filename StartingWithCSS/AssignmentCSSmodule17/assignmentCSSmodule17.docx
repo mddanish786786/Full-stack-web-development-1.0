@@ -1,0 +1,103 @@
+Q. What is CSS and why use it?
+
+Ans. CSS stands for Cascading Style Sheets. It is a stylesheet language used to describe the presentation of a document 
+written in HTML or XML (including XML dialects like SVG or XHTML). CSS defines how elements should be displayed on a 
+webpage, including their layout, colors, fonts, and other visual properties.
+
+Here are some reasons why CSS is used:
+
+Separation of Concerns: CSS allows separation of content (HTML) from presentation (CSS). This separation makes it easier to 
+maintain and update the styling of a website without affecting its content or structure.
+
+Consistency: CSS enables consistent styling across multiple web pages. By defining styles in a single stylesheet, you can 
+ensure that all elements on your website have a consistent appearance.
+
+Flexibility: CSS provides a wide range of styling options, allowing developers to create visually appealing and interactive 
+web pages. It offers flexibility in terms of layout, colors, fonts, and effects.
+
+Accessibility: CSS can improve the accessibility of a website by allowing developers to control the presentation of content 
+for different devices and screen sizes. This ensures that the website is usable and accessible to all users, including those 
+with disabilities.
+
+Efficiency: CSS enables efficient coding by allowing developers to apply styles to multiple elements using classes, IDs, 
+and selectors. This reduces redundancy and makes the code more concise and maintainable.
+
+Cross-Browser Compatibility: CSS helps ensure cross-browser compatibility by providing a consistent way to style web pages 
+across different browsers and platforms. It helps address inconsistencies in rendering and styling among various browsers.
+
+Q. What are the different ways to bring CSS into an HTML file?
+
+Ans. There are several ways to bring CSS into an HTML file:
+
+Inline Styles: You can use the style attribute directly within HTML elements to apply CSS styles inline. This method is 
+suitable for applying styles to individual elements.
+
+Example:
+
+<p style="color: red; font-size: 16px;">This is a paragraph with inline styles.</p>
+Internal Stylesheet: You can use the <style> element within the <head> section of an HTML document to define CSS styles 
+internally. This method is suitable for applying styles to multiple elements within a single HTML file.
+
+Example:
+
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph with internal stylesheet.</p>
+</body>
+External Stylesheet: You can create a separate CSS file with a .css extension and link it to your HTML document using the 
+<link> element. This method is suitable for applying styles to multiple HTML files and allows for better organization and 
+maintenance of styles.
+
+Example (HTML):
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>This is a paragraph with external stylesheet.</p>
+</body>
+Example (styles.css):
+
+css
+code
+p {
+    color: green;
+    font-size: 20px;
+}
+Each method has its advantages and use cases. Inline styles are useful for applying styles to individual elements, 
+internal stylesheets are suitable for smaller projects or when styles are specific to a single HTML file, and external 
+stylesheets are recommended for larger projects or when styles need to be shared across multiple HTML files.
+
+Q. What do you mean by specificity in CSS?
+
+Ans. In CSS, specificity refers to the mechanism used to determine which style rules should take precedence when multiple 
+conflicting rules target the same element. It determines which styles will be applied to an element based on the specificity 
+of the selectors used in the CSS rules.
+
+Specificity is calculated based on the following factors, in order of importance:
+
+Inline Styles: Styles applied directly to an element using the style attribute have the highest specificity. They override 
+styles defined in external stylesheets or internal stylesheets.
+
+ID Selectors: Selectors that target an element by its ID have higher specificity than other types of selectors. An ID selector 
+is denoted by the # symbol followed by the ID value.
+
+Class Selectors, Attribute Selectors, and Pseudo-classes: Selectors that target elements by their class, attribute, or 
+pseudo-class have moderate specificity. Class selectors are denoted by a . symbol followed by the class name, while attribute 
+selectors target elements based on their attributes, and pseudo-classes target specific states of elements.
+
+Type Selectors and Pseudo-elements: Selectors that target elements by their type (e.g., div, p, a) or 
+pseudo-elements (e.g., ::before, ::after) have the lowest specificity. They apply styles to all elements of the specified type 
+or pseudo-elements within the document.
+
+If two or more conflicting CSS rules apply to the same element, the browser calculates the specificity of each rule, and 
+the rule with the highest specificity will be applied. If two rules have the same specificity, the rule that appears last 
+in the CSS document or is defined later in the stylesheet will take precedence (this is known as the "cascading" part of 
+Cascading Style Sheets).
