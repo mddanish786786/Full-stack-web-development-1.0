@@ -1,0 +1,171 @@
+Q. Explain the table and its properties?
+
+Ans. In HTML, the <table> element is used to create tables, which are used to display data in rows and columns. 
+Tables consist of one or more rows (<tr>) and each row can contain one or more cells (<td> or <th>). The <td> 
+element represents a data cell, while the <th> element represents a header cell.
+
+Here's an example of a basic table structure:
+
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+In this example, we have a table with two rows and two columns. The first row contains header cells (<th>) which 
+represent the column headers, while the second row contains data cells (<td>) which represent the actual data.
+
+Now, let's discuss some common properties and attributes of tables:
+
+Border: The border attribute specifies the width of the border around the table and its cells. It is commonly used 
+for styling tables. For example: <table border="1"> will create a table with a border width of 1 pixel.
+
+Cellpadding: The cellpadding attribute specifies the amount of space between the content of a cell and its border. 
+For example: <table cellpadding="5"> will create a table with 5 pixels of padding inside each cell.
+
+Cellspacing: The cellspacing attribute specifies the amount of space between cells. For example: <table cellspacing="10"> 
+will create a table with 10 pixels of space between cells.
+
+Width and Height: The width and height attributes specify the width and height of the table. For example: <table width="100%" 
+height="200"> will create a table that spans the full width of its container and has a height of 200 pixels.
+
+Alignment: The align attribute specifies the horizontal alignment of the table within its containing element. Values can 
+be "left", "center", or "right". For example: <table align="center"> will center the table within its container.
+
+Caption: The <caption> element is used to add a caption or title to the table. It is placed immediately after the opening 
+<table> tag. For example: <table><caption>Table Caption</caption>...</table>.
+
+Headers: The <thead>, <tbody>, and <tfoot> elements are used to group the header, body, and footer content of the table, 
+respectively. This structure is semantically meaningful and helps assistive technologies interpret the content of the table 
+correctly.
+
+Q. Explain all Media elements and how they work?
+
+Ans. Media elements in HTML are used to embed various types of media content, such as audio, video, and images, into web 
+pages. They allow developers to enrich their web pages with multimedia content, enhancing the user experience. Let's explore 
+each media element and how they work:
+
+Audio (<audio>):
+
+The <audio> element is used to embed audio content, such as music or sound effects, into a web page.
+It supports various audio formats, including MP3, Ogg, and WAV.
+Here's an example of how to use the <audio> element:
+
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+The controls attribute adds audio playback controls (play, pause, volume) to the audio player.
+Video (<video>):
+
+The <video> element is used to embed video content into a web page.
+It supports various video formats, including MP4, WebM, and Ogg.
+Here's an example of how to use the <video> element:
+
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+The controls attribute adds video playback controls (play, pause, volume) to the video player.
+Image (<img>):
+
+The <img> element is used to embed images into a web page.
+It is a self-closing tag, and the src attribute specifies the URL of the image.
+Here's an example of how to use the <img> element:
+
+<img src="image.jpg" alt="Description of the image">
+The alt attribute provides alternative text for the image, which is displayed if the image cannot be loaded or if the user 
+is using a screen reader.
+Canvas (<canvas>):
+
+The <canvas> element is used to draw graphics, animations, or interactive content on a web page using JavaScript.
+It provides a drawing space where developers can use JavaScript to create dynamic and interactive visualizations.
+Here's an example of how to use the <canvas> element:
+
+<canvas id="myCanvas" width="400" height="200"></canvas>
+JavaScript code is used to interact with the canvas element and draw graphics or animations dynamically.
+SVG (<svg>):
+
+The <svg> element is used to embed scalable vector graphics (SVG) into a web page.
+SVG is a format for describing 2D graphics and graphical applications in XML.
+It allows for the creation of scalable and interactive graphics that can be manipulated using CSS and JavaScript.
+Here's an example of how to use the <svg> element:
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+</svg>
+SVG elements and attributes define graphical shapes, text, and other visual elements.
+
+Q. What is get and post in form?
+
+Ans. In HTML forms, GET and POST are two different methods used to send form data to the server. Each method has its own 
+characteristics and use cases:
+
+GET:
+
+The GET method submits form data as part of the URL query string.
+Form data is appended to the URL in the form of key-value pairs, separated by & symbols.
+This method is suitable for submitting small amounts of data and for non-sensitive information.
+Data sent via GET can be seen in the browser's address bar, making it less secure for sensitive information.
+It has restrictions on the length of the URL, so it is not suitable for large amounts of data.
+It is commonly used for search forms and for retrieving data from the server.
+Example:
+
+<form action="/process.php" method="GET">
+  <input type="text" name="username">
+  <input type="submit" value="Submit">
+</form>
+If the user enters "john" in the input field and submits the form, the URL will become /process.php?username=john.
+POST:
+
+The POST method sends form data in the body of the HTTP request.
+Form data is not visible in the URL, making it more secure, especially for sensitive information such as passwords.
+There are no restrictions on the length of data that can be sent via POST.
+It is suitable for submitting large amounts of data and for sensitive information.
+It is commonly used for forms that involve creating, updating, or deleting data on the server.
+Example:
+
+<form action="/process.php" method="POST">
+  <input type="text" name="username">
+  <input type="submit" value="Submit">
+</form>
+The data entered in the input field is sent to /process.php in the body of the HTTP request.
+
+Q. List all the input types we have in forms.
+
+Ans. In HTML forms, there are various input types that allow users to enter different types of data. Here is a list of 
+commonly used input types:
+
+Text: <input type="text"> - Used for single-line text input.
+
+Password: <input type="password"> - Used for password input fields. Characters are masked for security.
+
+Checkbox: <input type="checkbox"> - Used for checkboxes, allowing users to select multiple options from a list.
+
+Radio: <input type="radio"> - Used for radio buttons, allowing users to select only one option from a list.
+
+Number: <input type="number"> - Used for numeric input fields. Displays a spinner control for incrementing/decrementing values.
+
+Email: <input type="email"> - Used for email input fields. Validates that the entered value is in the format of an email address.
+
+URL: <input type="url"> - Used for URL input fields. Validates that the entered value is in the format of a URL.
+
+Date: <input type="date"> - Used for date input fields. Displays a date picker control for selecting dates.
+
+Time: <input type="time"> - Used for time input fields. Displays a time picker control for selecting times.
+
+Datetime-local: <input type="datetime-local"> - Used for input fields that require both date and time information. Displays 
+a combined date and time picker control.
+
+File: <input type="file"> - Used for file upload fields. Allows users to select and upload files from their device.
+
+Submit: <input type="submit"> - Used to create a submit button that submits the form data to the server.
+
+Reset: <input type="reset"> - Used to create a reset button that resets the form fields to their initial values.
+
+Hidden: <input type="hidden"> - Used to create hidden input fields that are not displayed on the form but are submitted with 
+the form data.

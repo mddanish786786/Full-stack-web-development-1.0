@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Registration Form</title>
+</head>
+<body>
+    <form action="/signup" method="post" target="_blank"><!--it is a part of url, we can say route. (action makes user where to submit the data & method makes user get and post or many more)-->
+        <fieldset>
+            <legend>Collecting User Data</legend>
+            <label for="fullname">Enter Your Full Name</label>
+            <input type="text" id="fullname">
+            <br>
+            <label for="email">Enter Your Email</label>
+            <input type="email" id="email">
+            <br>
+            <label for="password">Enter Your Password</label>
+            <input type="password" id="password">
+            <br>
+            Select Gender
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <br>
+            <label for="female">Femal</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <br>
+            <label for="transgender">Transgender</label>
+            <input type="radio" id="transgender" name="gender" value="transgender">
+            <br>
+            Please Enter Your Address
+            <br>
+            <textarea cols="30" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
