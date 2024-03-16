@@ -1,0 +1,108 @@
+Q. Why is it called Pseudo class?
+
+Ans. The term "pseudo-class" in CSS refers to a special type of class that is used to define the state or behavior of an 
+element. The word "pseudo" means "false" or "not genuine," and in the context of CSS, a pseudo-class is not a real class 
+that is defined in the HTML markup but rather a virtual class that represents a specific state or condition of an element.
+
+Pseudo-classes are used to style elements based on various states or conditions that cannot be represented by regular 
+classes or HTML attributes alone. For example, pseudo-classes can target elements based on user interaction (such as :hover, 
+:active), form states (such as :focus, :checked), or structural relationships (such as :first-child, :nth-child).
+
+The term "pseudo-class" is used to distinguish these special classes from regular classes defined in the HTML markup. They 
+are considered "pseudo" because they are not part of the actual document structure but rather provide additional styling hooks 
+based on certain conditions or states.
+
+Q. What are gradients in CSS?
+
+Ans. Gradients in CSS are a way to create smooth transitions between two or more colors, allowing for more visually appealing 
+backgrounds, borders, or text effects. Gradients can be applied using the linear-gradient() or radial-gradient() functions in CSS.
+
+Linear Gradients:
+
+Linear gradients create a smooth transition between two or more colors along a straight line.
+They are defined by specifying the starting and ending points of the gradient line and the colors to transition between.
+Linear gradients can be applied vertically, horizontally, or at any angle.
+Example:
+
+css code
+.element {
+    background: linear-gradient(to right, red, blue);
+}
+Radial Gradients:
+
+Radial gradients create a smooth transition between two or more colors radiating outward from a central point.
+They are defined by specifying the starting and ending shapes of the gradient (such as a circle or ellipse), the position of 
+the center point, and the colors to transition between.
+Example:
+
+css code
+.element {
+    background: radial-gradient(circle, red, blue);
+}
+
+Q. What are different types of transitions in CSS?
+
+Ans. In CSS, transitions are used to create smooth animations when a property changes its value over time. There are several 
+types of transitions that can be applied to elements to control how they change visually. The main types of transitions in CSS are:
+
+Transition on Property Change:
+
+This is the most common type of transition, where you specify which property you want to animate and the duration of the 
+transition.
+When the specified property changes its value, the transition effect is applied.
+Example:
+
+css code
+.element {
+    transition: width 0.3s ease-in-out;
+}
+Transition on Multiple Properties:
+
+You can apply transitions to multiple properties simultaneously by separating them with commas.
+Each property can have its own duration, timing function, and delay.
+Example:
+
+css code
+.element {
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+Transition Timing Functions:
+
+Timing functions control the speed of the transition, specifying how the intermediate values of a property are calculated over 
+time.
+Common timing functions include ease, linear, ease-in, ease-out, and ease-in-out.
+Example:
+
+css code
+.element {
+    transition: width 0.3s ease-in-out;
+}
+Transition Duration:
+
+The duration property specifies how long the transition effect should last.
+You can specify the duration in seconds or milliseconds.
+Example:
+
+css code
+.element {
+    transition: width 2s;
+}
+Transition Delay:
+
+The delay property specifies a delay before the transition effect starts.
+This can be useful for creating staggered or sequenced animations.
+Example:
+
+css code
+.element {
+    transition: width 0.3s ease-in-out 0.5s;
+}
+Transition Shorthand:
+
+The transition property is a shorthand property that combines the transition properties into a single declaration.
+Example:
+
+css code
+.element {
+    transition: width 0.3s ease-in-out;
+}
