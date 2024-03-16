@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box {
+            border: 5px solid #6922b0;
+            background-color: lightgray;
+            padding: 40px;
+            margin: 40px;
+            width: 300px;
+            height: 150px;
+        }
+        /* 300(width) + 40 (padding on right) + 40 (padding on left) + 5 (border on left) + 5 (border on right) = That is how it's calculated */
+        .alternate {
+            box-sizing: border-box;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"> I use the standard box model.</div>
+    <div class="box alternate">I us ethe alternate box  model.</div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+Q. Why css selectors used in html?
+
+Ans. CSS selectors are used in HTML to target and apply styles to specific elements within a webpage. They allow 
+developers to control the appearance and layout of HTML elements by selecting them based on various criteria, 
+such as their type, class, ID, attributes, or position within the document.
+
+Here are some reasons why CSS selectors are used in HTML:
+
+Targeting Elements: CSS selectors allow developers to target specific HTML elements or groups of elements within a webpage. This 
+enables them to apply styles selectively to different parts of the document, such as headings, paragraphs, lists, links, etc.
+
+Styling with Classes and IDs: CSS selectors can target elements based on their class names or IDs, allowing developers to apply 
+styles to elements with specific attributes. This enables reusable styles and consistent styling across multiple elements.
+
+Pseudo-classes and Pseudo-elements: CSS selectors support pseudo-classes and pseudo-elements, which allow developers to target 
+elements based on their state (e.g., hover, active) or create virtual elements (e.g., before, after). This enables the creation 
+of interactive and dynamic styles.
+
+Attribute Selectors: CSS selectors can target elements based on their attributes, such as href, src, type, etc. This allows 
+developers to style elements based on their attributes or attribute values, enhancing the visual presentation of the document.
+
+Descendant and Child Selectors: CSS selectors support descendant and child selectors, which allow developers to target elements 
+based on their relationship to other elements within the document structure. This enables fine-grained control over the styling 
+of nested elements.
+
+Q. What are the different types of selectors in css?
+
+Ans. In CSS, there are several types of selectors that allow developers to target and style specific elements within a 
+webpage. These selectors vary in their specificity and the criteria they use to target elements. Here are some of the most 
+commonly used types of selectors in CSS:
+
+Type Selectors: Type selectors target elements based on their HTML tag name. They apply styles to all elements of a specific 
+type.
+
+Example: p { color: blue; }
+
+Class Selectors: Class selectors target elements based on their class attribute. They apply styles to elements with a specific 
+class name.
+
+Example: .highlight { background-color: yellow; }
+
+ID Selectors: ID selectors target elements based on their ID attribute. They apply styles to a single element with a specific 
+ID.
+
+Example: #main-content { font-size: 16px; }
+
+Attribute Selectors: Attribute selectors target elements based on their attributes and attribute values.
+
+[attribute]: Selects elements with the specified attribute.
+[attribute=value]: Selects elements with the specified attribute and attribute value.
+[attribute^=value]: Selects elements with the specified attribute value at the beginning.
+[attribute$=value]: Selects elements with the specified attribute value at the end.
+[attribute*=value]: Selects elements with the specified attribute value anywhere within the attribute.
+Example: input[type="text"] { border: 1px solid black; }
+
+Descendant Selectors: Descendant selectors target elements that are descendants of a specific parent element. They use whitespace 
+to specify the relationship between elements.
+
+Example: ul li { list-style-type: none; }
+
+Child Selectors: Child selectors target elements that are direct children of a specific parent element. They use the > symbol to 
+specify the relationship between elements.
+
+Example: ul > li { font-weight: bold; }
+
+Adjacent Sibling Selectors: Adjacent sibling selectors target elements that are immediately preceded by a specific sibling 
+element.
+
+Example: h2 + p { margin-top: 0; }
+
+General Sibling Selectors: General sibling selectors target elements that are siblings of a specific element, regardless of their 
+position in the document.
+
+Example: h2 ~ p { font-style: italic; }
+
+Pseudo-classes and Pseudo-elements: Pseudo-classes target elements based on their state or position within the document, while 
+pseudo-elements create virtual elements.
+
+Pseudo-classes: :hover, :active, :focus, :first-child, :last-child, etc.
+Pseudo-elements: ::before, ::after, ::first-line, ::first-letter, etc.
+
+Q. How do you include external fonts and apply them?
+
+Ans. To include external fonts in a webpage and apply them using CSS, you can follow these steps:
+
+Choose Fonts: First, choose the fonts you want to include in your webpage. You can select fonts from popular font repositories 
+like Google Fonts, Adobe Fonts, or Font Squirrel.
+
+Link External Font: Once you've chosen the fonts you want to use, add a link to the external font file in the <head> section of 
+your HTML document. This link will fetch the font file from the external source.
+
+Example (using Google Fonts):
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+Apply Font Styles: After linking the external font, you can use the font-family property in your CSS to apply the font to 
+specific elements on your webpage.
+
+Example:
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+In this example, the font family 'Roboto' is applied to the body element. If the font 'Roboto' is not available, the browser 
+will use the fallback font sans-serif.
+
+Specify Font Weights and Styles (Optional): You can also specify different font weights and styles for the external font using 
+CSS.
+
+Example:
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+In this example, the h1 element will use the font 'Roboto' with a bold weight and italic style.
+
+Apply Font to Specific Elements: Use the font-family property to apply the external font to specific elements as needed in your 
+CSS.
+
+Example:
+
+.custom-font {
+    font-family: 'Roboto', sans-serif;
+}
+In this example, elements with the class .custom-font will use the font 'Roboto'.
+
+By following these steps, you can include external fonts in your webpage and apply them using CSS to achieve the desired 
+typography and design.
