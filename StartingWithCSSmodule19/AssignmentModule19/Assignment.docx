@@ -1,0 +1,134 @@
+Q. What is padding and margin and when do you use them?
+
+Ans. Padding and margin are both CSS properties that control the spacing around an element, but they serve different purposes:
+
+Padding:
+
+Padding refers to the space between the content of an element and its border.
+It is used to create space inside the element, pushing the content away from the border.
+Padding can be applied individually to each side of the element (top, right, bottom, left) or all sides at once.
+It is commonly used to add breathing room inside elements, create separation between text and borders, or improve readability.
+Example:
+
+css code
+.box {
+    padding: 20px; /* Applies 20 pixels of padding to all sides */
+}
+Margin:
+
+Margin refers to the space outside of an element's border.
+It controls the space between the element and adjacent elements.
+Margins can collapse, meaning that adjacent margins may overlap or combine to form a single margin.
+Margin can also be applied individually to each side of the element or all sides at once.
+It is commonly used to create space between elements, control the layout of a webpage, or center elements horizontally and vertically.
+Example:
+
+css code
+.box {
+    margin: 20px; /* Applies 20 pixels of margin to all sides */
+}
+
+Q. What is display property and explain display inline, block, and inline-block?
+
+Ans. The display property in CSS specifies how an element is displayed in the layout of a webpage. It controls the layout behavior of an element, determining its visibility, positioning, and interaction with other elements. There are various values for the display property, but three of the most common values are inline, block, and inline-block.
+
+Display: inline:
+
+Elements with display: inline are displayed inline with the surrounding content.
+They do not start on a new line and only occupy the space necessary for their content.
+Inline elements do not accept width and height properties, and margins and paddings only affect the left and right sides.
+Examples of inline elements include <span>, <a>, <strong>, <em>, <img>, and <input>.
+Example:
+
+css code
+span {
+    display: inline;
+}
+Display: block:
+
+Elements with display: block start on a new line and stretch to fill the width of their container by default.
+They create a block-level element with explicit width, height, margins, and paddings that can be applied.
+Block-level elements typically stack on top of each other, creating a vertical layout structure.
+Examples of block-level elements include <div>, <p>, <h1> to <h6>, <ul>, <ol>, and <form>.
+Example:
+
+css code
+div {
+    display: block;
+}
+Display: inline-block:
+
+Elements with display: inline-block are displayed inline like inline elements but have the properties of block-level elements.
+They can have explicit width, height, margins, and paddings applied to them.
+Inline-block elements flow with the surrounding content but can also have block-level properties.
+This display value is useful for creating elements that need to flow inline but also require block-level properties.
+Example:
+
+css code
+div {
+    display: inline-block;
+}
+
+Q. Explain min-height, min-width and max-height, max-width in css?
+
+Ans. In CSS, min-height, min-width, max-height, and max-width are properties used to control the minimum and maximum dimensions 
+of elements. They allow developers to set limits on how small or large an element can be rendered, ensuring consistency and 
+responsiveness in the layout of a webpage.
+
+min-height:
+
+The min-height property specifies the minimum height that an element should have.
+If the content inside the element is larger than the specified minimum height, the element will expand to accommodate the content.
+If the content inside the element is smaller than the specified minimum height, the element will still have the minimum height 
+applied.
+This property is useful for ensuring that elements have a minimum height, especially when their content is dynamic or variable 
+in size.
+Example:
+
+css code
+.container {
+    min-height: 200px;
+}
+min-width:
+
+The min-width property specifies the minimum width that an element should have.
+Similar to min-height, if the content inside the element is larger than the specified minimum width, the element will expand to 
+accommodate the content.
+If the content inside the element is smaller than the specified minimum width, the element will still have the minimum width 
+applied.
+This property is useful for ensuring that elements have a minimum width, especially when their content is dynamic or variable in 
+size.
+Example:
+
+css code
+.container {
+    min-width: 300px;
+}
+max-height:
+
+The max-height property specifies the maximum height that an element should have.
+If the content inside the element exceeds the specified maximum height, the element will overflow, and scrollbars may appear to 
+allow users to view the overflow content.
+If the content inside the element is smaller than the specified maximum height, the element will not expand beyond that height.
+This property is useful for limiting the height of elements, preventing them from becoming too tall and disrupting the layout of 
+the webpage.
+Example:
+
+css code
+.container {
+    max-height: 400px;
+}
+max-width:
+
+The max-width property specifies the maximum width that an element should have.
+Similar to max-height, if the content inside the element exceeds the specified maximum width, the element will overflow, and 
+scrollbars may appear.
+If the content inside the element is smaller than the specified maximum width, the element will not expand beyond that width.
+This property is useful for limiting the width of elements, preventing them from becoming too wide and causing horizontal 
+scrolling.
+Example:
+
+css code
+.container {
+    max-width: 600px;
+}
