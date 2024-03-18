@@ -1,0 +1,42 @@
+body {
+    background-color: red;
+}
+
+div {
+    text-align: center;
+    font-size: x-large;
+}
+
+div::after {
+    content: Welcome to the demo;
+}
+
+@media (min-width: 900px){
+    body {
+        background-color: aquamarine;
+    }
+
+    div ::after {
+        content: We are responsive;
+    }
+}
+
+@media (main-width: 1000px) {
+    body {
+        background-color: greenyellow;
+    }
+
+    div::after {
+        content: 'even bigger screen';
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: violet;
+    }
+
+    div::after {
+        content: 'very small';
+    }
+}
