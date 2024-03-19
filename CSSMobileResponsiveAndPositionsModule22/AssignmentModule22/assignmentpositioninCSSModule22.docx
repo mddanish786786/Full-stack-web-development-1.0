@@ -1,0 +1,78 @@
+Q. What is position property in CSS and it's type?
+
+Ans. In CSS, the position property is used to specify the positioning method of an element within its containing element. The 
+position property can take several values, each of which determines how the element is positioned and how it interacts with other 
+elements on the page. The main types of positioning values for the position property are:
+
+Static Positioning (position: static;):
+
+This is the default positioning behavior for elements.
+Elements with position: static; are positioned according to the normal flow of the document.
+They ignore the values of the top, right, bottom, and left properties.
+Relative Positioning (position: relative;):
+
+Elements with position: relative; are positioned relative to their normal position in the document flow.
+When an element is positioned relatively, it can be moved using the top, right, bottom, and left properties.
+Other elements on the page will still be positioned as if the element were in its normal position.
+Absolute Positioning (position: absolute;):
+
+Elements with position: absolute; are removed from the normal document flow and positioned relative to their nearest positioned 
+ancestor.
+If no positioned ancestor is found, the element is positioned relative to the initial containing block (usually the <html> element).
+Absolutely positioned elements are completely removed from the document flow, so they do not affect the position of other elements.
+They can be moved using the top, right, bottom, and left properties.
+Fixed Positioning (position: fixed;):
+
+Elements with position: fixed; are positioned relative to the viewport, which means they remain fixed in their position even when 
+the page is scrolled.
+Fixed elements are removed from the normal document flow, similar to absolutely positioned elements.
+They can be moved using the top, right, bottom, and left properties.
+Sticky Positioning (position: sticky;):
+
+Elements with position: sticky; are positioned based on the user's scroll position.
+They behave like relatively positioned elements until the user scrolls to a specific point, at which point they become fixed in 
+their position relative to the viewport.
+Sticky positioning is often used for elements like headers or navigation bars that should remain visible as the user scrolls down 
+the page.
+
+Q. How many types of positioning are there in CSS?
+
+Ans. There are five main types of positioning in CSS:
+
+Static Positioning
+Relative Positioning
+Absolute Positioning
+Fixed Positioning
+Sticky Positioning
+These positioning types are controlled using the position property in CSS, and each type has its own behavior and use cases for 
+positioning elements within a web page.
+
+Q. What is Z-index and why to use it?
+
+Ans. 
+z-index is a CSS property that controls the stacking order of elements along the z-axis, which is perpendicular to both the 
+x-axis (horizontal) and y-axis (vertical) of the viewport. It determines which elements appear in front of or behind other 
+elements on the page.
+
+The z-index property takes an integer value, which specifies the stacking order of an element relative to other elements on the 
+page. Elements with a higher z-index value will appear in front of elements with a lower z-index value. If two elements have the 
+same z-index, their stacking order will be determined by their position in the HTML document.
+
+The z-index property is primarily used to control the layering of overlapping elements, such as positioned elements 
+(those with position: absolute, position: relative, position: fixed, or position: sticky) or elements with a higher stacking 
+context.
+
+Here are some common use cases for z-index:
+
+Layering Overlapping Elements: Use z-index to ensure that certain elements appear above others, such as dropdown menus, pop-up 
+modals, or tooltips.
+
+Controlling Stacking Order: When elements overlap due to positioning, z-index allows you to control the order in which they are 
+stacked, ensuring that the desired elements appear in front.
+
+Creating Stacking Contexts: Elements with a z-index value other than auto create a stacking context, which affects the stacking 
+order of their descendants. z-index can be used to manage the stacking order within these contexts.
+
+It's important to use z-index judiciously to avoid unintended behavior or visual glitches. Using excessively high z-index values 
+or relying heavily on z-index for layout control can lead to unpredictable results and maintenance challenges. Additionally, 
+be mindful of the stacking context created by parent elements and how it may affect the stacking order of child elements.
