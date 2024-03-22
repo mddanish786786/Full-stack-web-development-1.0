@@ -2,40 +2,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f9f5ed;
     overflow: hidden;
 }
 
-body {
-    height: 100vh;
-    width: 100vw;
-    background-color: #edf1fd;
+nav {
+    padding: 20px;
+    height: 15vh;
+}
+
+nav ul {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
-li {
+nav ul li {
     list-style: none;
-    cursor: pointer;
+    margin-right: 5%;
+    font-weight: 600;
 }
 
-a {
-    text-decoration: none;
+nav ul li img {
+    width: 100px;
 }
 
-button {
-    background-color: rgb(18, 155, 155);
-    padding: 4px 10px;
-    cursor: pointer;
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    height: 85%;
+}
+
+.leftmain {
+    width: 40%;
+}
+
+.leftmain h1 {
+    font-size: 60px;
+}
+
+.leftmain p {
+    margin: 5% 0;
+}
+
+.leftmain button {
+    padding: 15px 20px;
+    font-size: 18px;
     color: white;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-weight: 700;
-    width: fit-content;
+    font-weight: 600;
+    border: none;
+    background-color: #3b855b;
+    border-radius: 15px;
 }
 
-button::hover {
-    background-color: white;
-    color: rgb(18, 155, 155);
-    border: 1px solid black;
+.rightmain {
+    width: 60%;
+    padding-left: 7%;
+}
+
+.rightmain div img {
+    width: 30%;
 }
