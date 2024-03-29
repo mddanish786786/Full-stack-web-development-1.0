@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 1</title>
+</head>
+<body>
+    <!--ID-->
+    <p id="prag">Welcome</p>
+    
+    <!--Class-->
+    <ul>
+        <li class="tech">One</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+
+    <!--Tag name-->
+    <h2>Hello</h2>
+    <h2 class="class">Welcome</h2>
+    <h2 id="ids">Hola</h2>
+
+    <!--Query selector-->
+    <h2>Hello</h2>
+    <h2 class="class">Welcome</h2>
+    <h2 id="ids">Hola</h2>
+
+    <!--Class-->
+    <script>
+        //id
+        let prag = document.getElementById("prag");
+        console.log(prag); //we can use prag.innerText or prag.innerHTML in the console.
+
+        //class
+        let tech = document.getElementsByClassName("tech");
+        console.log(tech[1].innerText);
+        tech[2].innerText = "Nodejs";
+
+        //Tag Name
+       let tagname = document.getElementsByClassName("h2")
+        console.log();
+        tagname[2].innerText = "hi";
+
+        //Query selctor
+        let qs = document.querySelector(".class")
+        console.log(qs);
+        qs.className = "danish"
+        qs.classList = "danish, saddam, sid"
+           qs.setAttribute("title", "PWskills")
+
+    </script>
+</body>
+</html>
